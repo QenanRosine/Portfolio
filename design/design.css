@@ -1,3 +1,21 @@
-nav{
-    font-size: large;
-} 
+.btn-primary {
+    font-size: 24px; /* Augmenter la taille de police */
+    padding: 15px 30px; /* Ajouter du padding pour agrandir le bouton */
+    transition: transform 0.3s ease-in-out; /* Ajouter une transition d'animation */
+}
+
+.btn-primary:hover {
+    transform: scale(1.05); /* Appliquer un effet de zoom au survol du bouton */
+}
+
+.btn-group-vertical {
+    align-items: center; /* Centrer verticalement les boutons */
+}
+
+.vh-100 {
+    min-height: 100vh; /* Assurer que le conteneur occupe au moins 100% de la hauteur de la fenêtre */
+}
+
+.d-flex {
+    display: flex; /* Utiliser un affichage flex pour centrer les éléments */
+}

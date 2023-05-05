@@ -19,3 +19,51 @@
 .d-flex {
     display: flex; /* Utiliser un affichage flex pour centrer les éléments */
 }
+
+/* style pour les boutons */
+.btn-custom {
+    border: 2px solid green;
+    background-color: transparent;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+/* style pour le survol des boutons */
+.btn-custom:hover {
+    color: white;
+}
+/* style pour le premier bouton */
+.btn-custom-2 {
+    color: #7D99B8;
+}
+.btn-custom-2:hover {
+    background-color: #7D99B8;
+}
+/* style pour le deuxième bouton */
+.btn-custom-1 {
+    color: #E29A1B;
+}
+.btn-custom-1:hover {
+    background-color: #E29A1B;
+}
+/* style pour le troisième bouton */
+.btn-custom-3 {
+    color: #DF4E52;
+}
+.btn-custom-3:hover {
+    background-color: #DF4E52;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  
+
+#Contact {
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}

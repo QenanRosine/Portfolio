@@ -4,178 +4,347 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="design/design.css">
     <title>Portfolio</title>
 </head>
 <body>
 
-    <!-- Ma barre de Navigation -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md m-0 sticky-top">
-        <div class="container">
-            <div class="navbar-brand text-start">Portfolio</div>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menus">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Présentation">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#CV">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Compétences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Temoignage">Témoignage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+
+
+        <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicateurs du carrousel -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#Carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#Carousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#Carousel" data-bs-slide-to="3"></li>
+            </ol>
+        
+            <!-- Slides du carrousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height:450px;">
+                        <img src="/Mon_Portfolio/img/cocktailcaraibes.png" alt="Image 1" class="d-block w-100 h-100">                    
+                </div>
+        
+                <div class="carousel-item" style="height:450px;">
+                        <img src="/Mon_Portfolio/img/BreakDance.png" alt="Image 2" class="d-block w-100 h-100">
+                </div>
+        
+                <div class="carousel-item" style="height:450px;">
+                        <img src="/Mon_Portfolio/img/Legiteam_Obstruxion.png" alt="Image 3" class="d-block w-100 h-100">
+                </div>
+        
+                <div class="carousel-item" style="height:450px;">
+                        <img src="/Mon_Portfolio/img/Tesla.png" alt="Image 4" class="d-block w-100 h-100">
+                </div>
+            </div>
+
+
+            <!-- Contrôles du carrousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
             </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+
+
+
+
+
+
+        <div class="text-dark container p-5" id="Présentation">
+            <img src="http://cocktailcaraibes.com/wp-content/uploads/2022/06/pexels-tima-miroshnichenko-5701744-scaled.jpg" 
+                class="rounded-circle img-fluid img-temoignage mx-auto d-block shadow-lg mb-5" 
+                style="max-width: 140px; height: 140px;" />
+            <p>Bonjour, je m'appelle Qénân Rosine, jeune développeur web junior basé au Mans. <br><br>
+        
+            Enthousiaste et passionné par la technologie, je me suis spécialisé dans le développement web, et j'ai acquis une solide expertise dans les langages de programmation tels que HTML, CSS. J'ai également une expérience non négligeable dans le no-code avec Wordpress et Elementor, ainsi que dans les frameworks populaires tels que Bootstrap et MJML. <br><br>
+        
+            Créatif et attentif aux détails, je suis constamment à l'affût des dernières tendances du secteur pour créer des sites web performants et innovants. Je suis également reconnu pour ma capacité à apprendre rapidement et à m'adapter aux nouvelles technologies, ce qui me permet de relever de nouveaux défis avec enthousiasme.<br><br>
+        
+            Je suis fier de partager avec vous mon portfolio, qui met en avant mes projets précédents, mes compétences techniques et mes réalisations. J'ai hâte de collaborer avec vous pour créer des sites web exceptionnels qui répondent à vos besoins spécifiques.<br><br>
+        
+            N'hésitez pas à explorer mon portfolio et à me contacter pour discuter de vos projets de développement web. Je suis prêt à apporter ma contribution pour créer des expériences en ligne remarquables pour vous ou votre entreprise.</p>
+        </div>
+        
+
+
+
+    <div class="d-flex align-items-center justify-content-center p-2" id="CV">
+        <div class="btn-group-vertical text-center mt-3">
+            <a class="btn btn-primary rounded-pill text-white" href="/Mon_Portfolio/img/CV de Qénân Rosine.pdf.pdf" download="CV-Qenan">
+                Téléchargez mon CV !
+            </a>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center" id="CV">
+        <div class="btn-group-vertical text-center mt-3">
+            <a class="btn btn-primary rounded-pill text-white" href="/Mon_Portfolio/img/ROSINE Qénân Lettre de motivation.docx" download="Lettre-de-motivation-Qenan">
+                Téléchargez ma Lettre de Motivation !
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div class="container text-center" id="Compétences">
+        <h2 class="m-5 p-5">Mes compétences</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 my-4">
+                <h3>HTML / CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 my-4">
+                <h3>Bootstrap</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 my-4">
+                <h3>Python</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 my-4">
+                <h3>Analyse / Conception</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 my-4">
+                <h3>Élémentor / Wordpress</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 my-4">
+                <h3>MJML</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="container text-center" id="Portfolio">
+        <h2 class="p-5">Mon Portfolio</h2>
+        <div class="card-group">
+            <div class="card">
+                <h5 class="card-title">Site de Cocktail Caraibes</h5>
+                <div class="card-body">
+                    <img src="http://cocktailcaraibes.com/wp-content/uploads/2022/06/Salsa-caraibe-2.png" class="card-img-top w-100 h-100" alt="...">
+                </div>
     
-            <div id="menus" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="#Accueil" class="nav-link">Accueil</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#Présentation" class="nav-link">Présentation</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#CV" class="nav-link">CV</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#Compétences" class="nav-link">Compétences</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Témoignage</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-
-            </ul>
+                <div>
+                    <button type="button" class="btn btn-primary btn-custom btn-custom-1 btn-sm btn-block w-75" data-bs-toggle="modal" data-bs-target="#Projet1">
+                        Découvrir
+                    </button>
+                    <p class="card-text">Durée: 1 Mois</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <h5 class="card-title">Site de BreakDance</h5>
+                <div class="card-body">
+                    <img src="img/cardbreak_1.jpg" class="card-img-top w-100 h-100" alt="...">
+                </div>
+    
+                <div>
+                    <button type="button" class="btn btn-primary btn-custom btn-custom-2 btn-sm btn-block w-75" data-bs-toggle="modal" data-bs-target="#Projet2">
+                        Découvrir
+                    </button>
+                    <p class="card-text">Durée: 2 Semaines</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <h5 class="card-title">Interface Tesla</h5>
+                <div class="card-body">
+                    <img src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" class="card-img-top w-100 h-100" alt="...">
+                </div>
+    
+                <div>
+                    <button type="button" class="btn btn-primary btn-custom btn-custom-3 btn-sm btn-block w-75" data-bs-toggle="modal" data-bs-target="#Projet3">
+                        Découvrir
+                    </button>
+                    <p class="card-text">Durée: 2 Jours</p>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+      
 
+    <!-- Modal -->
+    <div class="modal fade" id="Projet1" tabindex="-1" aria-labelledby="Projet1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Projet1Label">Site de Cocktail Caraibes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    Ce site web à été créer en 1 mois via Wordpress et Elementor. Il as été concue pour l'association Cocktail Caraibes. Il as pour thème la danse plus partoculièrement la Salsa, la Bachata et la Kizomba.
+                </div>
 
-<!-- Structure du carrousel -->
-<div id="Carousel" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicateurs du carrousel -->
-    <ol class="carousel-indicators">
-        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#Carousel" data-slide-to="1"></li>
-        <li data-target="#Carousel" data-slide-to="2"></li>
-        <li data-target="#Carousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Slides du carrousel -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="/Mon_Portfolio/img/laptop-g9d7355454_1920.jpg" alt="Image 1" style="width:100%; height:750px;">
-            <div class="carousel-caption">
-                <h3>Titre 1</h3>
-                <p>Description 1</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="/Mon_Portfolio/img/monitor-g64a428b74_1920.jpg" alt="Image 2" style="width:100%; height:750px;">
-            <div class="carousel-caption">
-                <h3>Titre 2</h3>
-                <p>Description 2</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="/Mon_Portfolio/img/pexels-elvis-2528118.jpg" alt="Image 3" style="width:100%; height:750px;">
-            <div class="carousel-caption">
-                <h3>Titre 3</h3>
-                <p>Description 3</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="/Mon_Portfolio/img/pexels-kevin-ku-577585.jpg" alt="Image 4" style="width:100%; height:750px;">
-            <div class="carousel-caption">
-                <h3>Titre 4</h3>
-                <p>Description 4</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="https://cocktailcaraibes.com/" class="btn btn-primary btn-none" title="Jete un coup d'oeil au site">Visiter le site</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Contrôles du carrousel -->
-    <a class="left carousel-control" href="#Carousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Précédent</span>
-    </a>
-    <a class="right carousel-control" href="#Carousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Suivant</span>
-    </a>
-</div>
-
-
-
-
-
-<div class="ratio ratio-16x9 container" id="Présentation">
-    <iframe allowfullscreen src="https://www.youtube.com/embed/lXgLyCYuYA4"></iframe>
-</div>
-
-
-<div class="d-flex align-items-center justify-content-center" id="CV">
-    <div class="btn-group-vertical text-center mt-3">
-        <a class="btn btn-primary rounded-pill text-white" href="/Mon_Portfolio/img/CV de Qénân Rosine.pdf.pdf" download="CV-Qenan">
-            Téléchargez mon CV !
-        </a>
-    </div>
-</div>
-
-
-
-
-<div class="container text-center" id="Compétences">
-    <h2 class="m-5 perso_colorBlueLight">Mes compétences</h2>
-    <div class="row">
-        <div class="col-12 col-md-6 col-xl-4 my-4">
-            <h3>HTML / CSS</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 my-4">
-            <h3>Bootstrap</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 my-4">
-            <h3>Python</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 my-4">
-            <h3>Analyse / Conception</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 my-4">
-            <h3>Élémentor / Wordpress</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 my-4">
-            <h3>MJML</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+    <!-- Modal -->
+    <div class="modal fade" id="Projet2" tabindex="-1" aria-labelledby="Projet2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ce site à été conçue en 2 semaines, il as été créer à partir de HTML et Bootstrap et as principale pour thème le BreakDance. Il présente ce sport ainsi que les équipe et les compétition présente dedans</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="#" class="btn btn-primary btn-none" title="Bientôt disponible">Visiter le site</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+  <!-- Modal -->
+    <div class="modal fade" id="Projet3" tabindex="-1" aria-labelledby="Projet3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Cette page est une interface de Tesla créer à partir de HTML et Bootstrap.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="#" class="btn btn-primary btn-none" title="Bientôt disponible">Visiter le site</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <div class="container text-center" id="Temoignage">
+        <h2 class="p-5">Mes témoignages</h2>
+        <div class="row">
+            <div class="col-12 col-lg-4 temoignage1">
+                <img src="http://cocktailcaraibes.com/wp-content/uploads/2022/06/fred-maestro.jpg" class="rounded-circle img-fluid img-temoignage w-100" style="max-width: 140px; height: 140px;" />
+                <h3>Client 1</h3>
+                <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam atque harum perspiciatis deleniti mollitia fugiat quidem perferendis, ratione nostrum ex, eum dolore eius quas explicabo alias repellat. Impedit, itaque.</p>
+            </div>
+            <div class="col-12 col-lg-4 temoignage2">
+                <img src="http://cocktailcaraibes.com/wp-content/uploads/2022/06/pexels-dellon-thomas-1405963-scaled-e1654863849861.jpg" class="rounded-circle img-fluid img-temoignage w-100" style="max-width: 140px; height: 140px;" />
+                <h3>Client 2</h3>
+                <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam atque harum perspiciatis deleniti mollitia fugiat quidem perferendis, ratione nostrum ex, eum dolore eius quas explicabo alias repellat. Impedit, itaque.</p>
+            </div>
+            <div class="col-12 col-lg-4 temoignage3">
+                <img src="http://cocktailcaraibes.com/wp-content/uploads/2022/06/pexels-tima-miroshnichenko-5701744-scaled.jpg" class="rounded-circle img-fluid img-temoignage w-100" style="max-width: 140px; height: 140px;" />
+                <h3>Client 3</h3>
+                <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam atque harum perspiciatis deleniti mollitia fugiat quidem perferendis, ratione nostrum ex, eum dolore eius quas explicabo alias repellat. Impedit, itaque.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 class="text-center">Contact</h3>
+    <div id="Contact" class="text-center container ">
+       
+        <form method="post" action="mailto:qenan.rosine@gmail.com">
+            <div class="input-group">
+                <span class="input-group-text">Prénom et Nom</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="FormulaireDeContact" class="form-label">Adresse e-mail</label>
+              <input type="email" class="form-control" id="FormulaireDeContact" placeholder="prenom.nom@mail.com">
+            </div>
+            <div class="mb-3">
+              <label for="RaisonDuContact" class="form-label">Raison du contact</label>
+              <select class="form-select" id="RaisonDuContact" name="RaisonDuContact">
+                <option value="1">Création d'un site web</option>
+                <option value="2">Création d'une Newsletter</option>
+                <option value="3">Autre</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="Description" class="form-label">Description</label>
+              <textarea class="form-control" id="Description" name="Description" rows="3" placeholder="Décrivez votre projet"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Envoyer</button>
+          </form>
+
+          <p class="p-5">Si vous souhaitez me contacter, utilisez le formulaire de contact si vous rencontrez une erreur n'hésitez pas à m'envoyer un email à <b><a href="mailto:qenan.rosine@gmail.com" class="text-decoration-none">qenan.rosine@gmail.com</a></b>. <br>Á très vite cordialement Qénân Rosine.</p>
+    </div>      
+
+    <!-- Footer-->
+    <footer class="bg-dark text-end p-5 text-white w-100">
+        <div class="footer-expand-md">
+        © Qénân Rosine
+        </div>
+    </footer>
+
+<script src="Bouton du formulaire de contact.js"></script>
 </body>
 </html>
